@@ -1,0 +1,99 @@
+.Top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../../assets/moneyBank.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Budget {
+    width: 100%;
+    color: #fff;
+}
+
+.BudgetTitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.BudgetValue {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.BudgetIncome,
+.BudgetExpenses {
+    width: 30%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+
+.BudgetIncome {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.BudgetExpenses {
+    background-color: #FF5049;
+}
+
+.BudgetIncomeText,
+.BudgetExpensesText {
+    font-size: 13px;
+    color: #444;
+}
+
+.BudgetIncomeValue,
+.BudgetExpensesValue {
+    letter-spacing: 1px;
+}
+
+.BudgetIncomePercentage,
+.BudgetExpensesPercentage {
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+}
+
+.BudgetExpensesPercentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.Right {
+    width:33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 665px) {
+    .BudgetIncome,
+    .BudgetExpenses{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 955px) and (min-width: 665px) {
+    .BudgetIncome,
+    .BudgetExpenses{
+        width: 50%;
+    }
+}

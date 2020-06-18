@@ -1,0 +1,67 @@
+.Item {
+    padding: 13px;
+    height: 10vh;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+
+.Item:first-child { border-top: 1px solid #e7e7e7; }
+.Item:nth-child(even) { background-color: #f7f7f7; }
+
+.ItemDeleteButton {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    display: none;
+}
+
+.ItemValue{
+    transform: translateX(0);
+    transition: transform .3s;
+}
+
+.ItemDeleteButton:focus { outline: none; }
+.ItemDeleteButton:active { transform: translateY(2px); }
+
+.Item:hover .ItemDeleteButton { display: inline-block; }
+.Item:hover .ItemValue { transform: translateX(-20px); }
+.Item:hover .ItemPercentage { transform: translateX(-20px); }
+
+
+.Unpaid {
+    background-color: #FFDAD9 !important;
+    cursor: pointer;
+    color: #FF5049;
+}
+
+.Unpaid .ItemPercentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
+.Unpaid:hover .ItemDescription { font-weight: 900; }
+
+.Right {
+    display: flex;
+    width: 30%;
+}
+
+.ItemValue{
+    display: flex;
+}
+
+.ItemValue,
+.ItemDeleteButton {
+    color: #28B9B5;
+}
+
+@media only screen and (max-width: 655px){
+    .Item{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        overflow: scroll;
+    }
+}
+

@@ -1,0 +1,173 @@
+/***** FORM *****/
+
+.Bottom{
+    width:100%;
+}
+
+.Add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.AddContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.AddTypeIncome,
+.AddTypeExpense{
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.AddDescriptionIncome,
+.AddValueIncome,
+.AddDescriptionExpense,
+.AddValueExpense{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.AddDescriptionIncome,.AddDescriptionExpense { width: 400px;}
+.AddValueIncome,.AddValueExpense { width: 100px;}
+
+.AddButtonIncome
+{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.AddButtonExpense{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #FF5049;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.AddButtonIncome:active,
+.AddButtonExpense:active { transform: translateY(2px); }
+
+.AddTypeIncome:focus,
+.AddDescriptionIncome:focus,
+.AddValueIncome:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.AddTypeExpense:focus,
+.AddDescriptionExpense:focus,
+.AddValueExpense:focus {
+    outline: none;
+    border: 1px solid #FF5049;
+}
+
+.AddButtonIncome,.AddButtonExpense:focus { outline: none; }
+
+/***** LISTS *****/
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.Income {
+    width: 475px;
+    margin-right: 50px;
+}
+
+.Expenses {
+    width: 475px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.IncomeTitle { color: #28B9B5; }
+.ExpensesTitle { color: #FF5049; }
+
+@media only screen and (max-width: 655px) {
+    .AddContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .AddDescriptionIncome,
+    .AddDescriptionExpense{
+        width: 250px;
+        margin-right:0;
+    }
+
+    .AddTypeIncome,
+    .AddTypeExpense,
+    .AddValueIncome,
+    .AddValueExpense{
+        margin-bottom: 3px;
+        margin-right:0;
+        width: 150px;
+    }
+
+    .AddValueExpense,
+    .AddValueIncome{
+        margin-top:3px;
+        margin-right:0;
+
+    }
+
+    .AddButtonExpense,
+    .AddButtonIncome{
+        margin-left: 0;
+        font-size: 45px;
+    }
+
+    .Container{
+        flex-direction: column;
+    }
+
+    .Income{
+        margin-right: 0;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .Expenses{
+        width: 100%;
+    }
+}
+
+
+
